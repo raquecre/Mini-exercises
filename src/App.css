@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Urbanist', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navul {
+  @apply p-3 flex justify-center gap-20 bg-cyan-800 text-white text-2xl
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbarli {
+  @apply hover:bg-white/50 hover:text-black w-fit p-2 rounded-xl
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ulfizzbuzzresults {
+  @apply grid 
+  2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-8 sm:grid-cols-5 grid-cols-5 w-fit rounded-xl
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lifizzbuzzresults {
+  @apply text-center text-sm font-semibold bg-zinc-400/50 p-5
 }
