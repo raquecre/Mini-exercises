@@ -13,6 +13,10 @@ const NavBar = () => {
                 <Link to="/BizzBuzz">
                     <li className="navbarli"> BizzBuzz </li>
                 </Link>
+
+                <Link to="/PasswordGenerator">
+                    <li className="navbarli"> Password Generator </li>
+                </Link>
             </ul>
         </nav>
 
