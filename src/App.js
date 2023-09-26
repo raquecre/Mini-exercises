@@ -4,6 +4,7 @@ import './App.css';
 import BizzBuzz from './pages/BizzBuzz';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
+import PasswordGenerator from './pages/PasswordGenerator';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/BizzBuzz' element={<BizzBuzz/>} />
+      <Route path='/PasswordGenerator' element={<PasswordGenerator/>} />
+
       <Route path='*' element={<ErrorPage/>} />
 
 
